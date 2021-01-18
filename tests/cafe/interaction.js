@@ -9,8 +9,6 @@ test("command", async t => {
 
   await t.click(s);
   await t.expect(Selector("#commandExecuted").innerText).eql("1");
-  //await t.click(s);
-  //await t.expect(Selector("#actionExecuted").innerText).eql("1");
 
   await t.takeScreenshot({
     path: "command_long_running.png"
