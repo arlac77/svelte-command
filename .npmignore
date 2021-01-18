@@ -8,3 +8,4 @@ doc
 .test
 .vscode
 .github
+netlify.toml
