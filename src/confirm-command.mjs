@@ -10,7 +10,7 @@ export class ConfirmCommand extends BasicCommand {
         new Promise((resolve, reject) => {
           if (confirm(`Really ${command.title}?`)) {
             resolve();
-            action.start();
+            command.start();
           } else {
             reject();
           }

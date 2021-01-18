@@ -8,7 +8,7 @@ globalThis.confirm = async function (message) {
 
 test("ConfirmCommand", async t => {
   const command = new ConfirmCommand(
-    new Action(() => Promise.resolve(77), {
+    new Command(() => Promise.resolve(77), {
       timeout: 1000,
       title: "hello",
       description: "Say hello",

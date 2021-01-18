@@ -21,7 +21,7 @@ test("Command resolve", async t => {
 
   const p = command.start();
   t.true(command.active);
-  t.false.command.failed);
+  t.false(command.failed);
   t.false(command.canceled);
   t.false(command.completed);
 

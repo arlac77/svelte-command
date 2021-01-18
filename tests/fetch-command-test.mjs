@@ -15,7 +15,7 @@ globalThis.fetch = async function (url, options) {
 };
 
 test("FetchCommand", async t => {
-  const action = new FetchCommand(
+  const command = new FetchCommand(
     "https://github.com/",
     {},
     { disabled: true, title: "hallo" }
