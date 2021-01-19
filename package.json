@@ -7,8 +7,8 @@
   "svelte": "./src/index.svelte",
   "description": "general command execution handling for svelte components",
   "keywords": [
-    "component",
     "commands",
+    "component",
     "svelte",
     "web"
   ],
@@ -24,9 +24,9 @@
     "test": "npm run test:ava && npm run test:cafe",
     "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 1000 --app \"rollup -c tests/app/rollup.config.mjs -w\"",
     "test:ava": "ava --timeout 2m tests/*.mjs",
-    "docs": "documentation readme --section=API ./src/*.mjs",
+    "docs": "documentation readme --section=API ./src/**/.mjs",
     "lint": "npm run lint:docs",
-    "lint:docs": "documentation lint ./src/*.mjs",
+    "lint:docs": "documentation lint ./src/**/.mjs",
     "build": "rollup -c tests/app/rollup.config.mjs"
   },
   "devDependencies": {
