@@ -5,8 +5,10 @@
     "access": "public"
   },
   "svelte": "./src/index.svelte",
+  "description": "general command execution handling for svelte components",
   "keywords": [
     "component",
+    "commands",
     "svelte",
     "web"
   ],

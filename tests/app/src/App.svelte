@@ -49,13 +49,13 @@
   );
 </script>
 
-<div>
+<div class="center">
   <CommandButton {command}>Long Running Command</CommandButton>
   <CommandButton command={fetchCommand} />
   <CommandButton command={fetchCommandTimeout} />
   <CommandButton command={command2} />
   <CommandButton command={new ConfirmCommand(command2)} />
   <CommandButton command={failingCommand}>Failing Command</CommandButton>
-
-  <div id="commandExecuted">{commandExecuted}</div>
 </div>
+
+<div id="commandExecuted">{commandExecuted}</div>

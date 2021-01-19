@@ -56,6 +56,15 @@ export class BasicCommand {
   */
 }
 
+/**
+ * @property {string} title
+ * @property {string} description
+ * @property {string} shortcuts
+ * @property {boolean} disabled
+ * @property {boolean} active
+ * @property {boolean} failed
+ * @property {boolean} completed
+ */
 export class Command extends BasicCommand {
   constructor(_start, options = {}) {
     let disabled = options.disabled || false;

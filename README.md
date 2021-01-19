@@ -10,4 +10,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/arlac77/svelte-command/badge.svg)](https://snyk.io/test/github/arlac77/svelte-command)
 [![Coverage Status](https://coveralls.io/repos/arlac77/svelte-command/badge.svg)](https://coveralls.io/github/arlac77/svelte-command)
 [![Tested with TestCafe](https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg)](https://github.com/DevExpress/testcafe)
+
 # svelte-command
+
+general command execution handling for svelte components
