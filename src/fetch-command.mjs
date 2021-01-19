@@ -1,5 +1,8 @@
 import { Command } from "./command.mjs";
 
+/**
+ * Command executing a fetch request.
+ */
 export class FetchCommand extends Command {
   constructor(url, fetchOptions, options = {}) {
     const controller = new AbortController();
