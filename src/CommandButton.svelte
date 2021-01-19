@@ -4,7 +4,7 @@
 
 <button
   disabled={$command.disabled}
-  aria-keyshortcuts={$command.shortcuts}
+  aria-keyshortcuts={$command.disabled ? undefined : $command.shortcuts}
   class:active={$command.active}
   class:failed={$command.failed}
   on:click|preventDefault={() => command.start()}>
