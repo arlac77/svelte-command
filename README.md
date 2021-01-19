@@ -14,3 +14,24 @@
 # svelte-command
 
 general command execution handling for svelte components
+
+# API
+
+# install
+
+With [npm](http://npmjs.org) do:
+
+```shell
+npm install svelte-command
+```
+
+With [yarn](https://yarnpkg.com) do:
+
+```shell
+yarn add svelte-command
+```
+
+
+# license
+
+BSD-2-Clause
