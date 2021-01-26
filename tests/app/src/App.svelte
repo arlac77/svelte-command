@@ -12,7 +12,7 @@
     {},
     {
       title: "Fetch Data",
-      shortcuts: "Command+F",
+      shortcuts: "alt+F",
       responseHandler: async response => {}
     }
   );
@@ -22,7 +22,7 @@
     {},
     {
       title: "Fetch Data Timeout",
-      shortcuts: "Command+F",
+      shortcuts: "command+T",
       timeout: 1000
     }
   );
@@ -31,7 +31,7 @@
     () => new Promise(resolve => setTimeout(resolve, 5000)),
     {
       title: "Sometimes Disabled",
-      shortcuts: "Command+A"
+      shortcuts: "command+D"
     }
   );
 

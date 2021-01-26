@@ -27,7 +27,7 @@ export class BasicCommand {
       this.completed = true;
     } catch (e) {
       this.error = e;
-     // this.failed = true;
+      // this.failed = true;
     }
   }
 
@@ -162,4 +162,45 @@ export class Command extends BasicCommand {
   get active() {
     return this.promise ? true : false;
   }
+
+  get shortcutDefinition() {
+    const s = this.shortcuts;
+
+    if (s) {
+      let m = s.match(/(command|ctrl|meta|alt|shift)\+([a-zA-Z0-9])/i);
+      if (m) {
+        const c = modifier2char[m[1]];
+        if (c) {
+          return c + m[2];
+        }
+      }
+    }
+
+    return "";
+  }
+
+  matchesKeydown(event) {
+    if (event.metaKey && event.composed) {
+      const s = this.shortcuts;
+
+      if (s) {
+        let m = s.match(/(command|ctrl|meta|alt|shift)\+([a-zA-Z0-9])/i);
+        if (m) {
+          if (event.key == m[2]) {
+            return true;
+          }
+        }
+      }
+      console.log(event);
+    }
+    return false;
+  }
 }
+
+const modifier2char = {
+  shift: "⇧",
+  meta: "⌘",
+  command: "⌘",
+  alt: "⌥",
+  ctrl: "^"
+};
