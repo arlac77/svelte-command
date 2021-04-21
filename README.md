@@ -4,7 +4,7 @@
 [![minified size](https://badgen.net/bundlephobia/min/svelte-command)](https://bundlephobia.com/result?p=svelte-command)
 [![downloads](http://img.shields.io/npm/dm/svelte-command.svg?style=flat-square)](https://npmjs.org/package/svelte-command)
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/svelte-command.svg?style=flat-square)](https://github.com/arlac77/svelte-command/issues)
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fsvelte-command%2Fbadge&style=flat)](https://actions-badge.atrox.dev/arlac77/svelte-command/goto)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fsvelte-command%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/arlac77/svelte-command/goto)
 [![Styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Known Vulnerabilities](https://snyk.io/test/github/arlac77/svelte-command/badge.svg)](https://snyk.io/test/github/arlac77/svelte-command)
@@ -21,23 +21,23 @@ general command execution handling for svelte components
 
 ### Table of Contents
 
--   [subscribe](#subscribe)
-    -   [Parameters](#parameters)
--   [Command](#command)
-    -   [Parameters](#parameters-1)
-    -   [Properties](#properties)
--   [ConfirmCommand](#confirmcommand)
-    -   [Parameters](#parameters-2)
--   [FetchCommand](#fetchcommand)
-    -   [Parameters](#parameters-3)
--   [handleFailedResponse](#handlefailedresponse)
-    -   [Parameters](#parameters-4)
+*   [subscribe](#subscribe)
+    *   [Parameters](#parameters)
+*   [Command](#command)
+    *   [Parameters](#parameters-1)
+    *   [Properties](#properties)
+*   [ConfirmCommand](#confirmcommand)
+    *   [Parameters](#parameters-2)
+*   [FetchCommand](#fetchcommand)
+    *   [Parameters](#parameters-3)
+*   [handleFailedResponse](#handlefailedresponse)
+    *   [Parameters](#parameters-4)
 
 ## subscribe
 
 ### Parameters
 
--   `subscription` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** 
+*   `subscription` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** 
 
 ## Command
 
@@ -45,18 +45,18 @@ general command execution handling for svelte components
 
 ### Parameters
 
--   `_start`  
--   `options`   (optional, default `{}`)
+*   `_start`  
+*   `options`   (optional, default `{}`)
 
 ### Properties
 
--   `title` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `description` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `shortcuts` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
--   `disabled` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
--   `active` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
--   `failed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
--   `completed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+*   `title` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+*   `description` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+*   `shortcuts` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+*   `disabled` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+*   `active` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+*   `failed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+*   `completed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 ## ConfirmCommand
 
@@ -66,7 +66,7 @@ Ask for confirmation before esxecution a given Command.
 
 ### Parameters
 
--   `command`  
+*   `command`  
 
 ## FetchCommand
 
@@ -76,9 +76,9 @@ Command executing a fetch request.
 
 ### Parameters
 
--   `url`  
--   `fetchOptions`  
--   `options`   (optional, default `{}`)
+*   `url`  
+*   `fetchOptions`  
+*   `options`   (optional, default `{}`)
 
 ## handleFailedResponse
 
@@ -86,7 +86,7 @@ Extract error description from response
 
 ### Parameters
 
--   `response` **FetchResponse** 
+*   `response` **FetchResponse** 
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
