@@ -1,8 +1,7 @@
 <script context="module">
-  import { Command } from "./command.mjs";
-  import { ConfirmCommand } from "./confirm-command.mjs";
-  import { FetchCommand } from "./fetch-command.mjs";
+  export { Command } from "./command.mjs";
+  export { ConfirmCommand } from "./confirm-command.mjs";
+  export { FetchCommand } from "./fetch-command.mjs";
   import CommandButton from "./CommandButton.svelte";
-
-  export { CommandButton, Command, ConfirmCommand, FetchCommand };
+  export { CommandButton };
 </script>
