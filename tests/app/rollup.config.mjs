@@ -34,7 +34,7 @@ export default {
         dev: !production
       }
     }),
-  resolve({
+    resolve({
       browser: true,
       dedupe: importee =>
         importee === "svelte" || importee.startsWith("svelte/")
@@ -42,8 +42,7 @@ export default {
     dev({
       port,
       dirs: [`${basedir}/public`],
-      spa: `${basedir}/public/index.html`,
-      basePath: "/"
+      spa: true
     })
   ]
 };
