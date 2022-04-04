@@ -30,3 +30,8 @@ labels:
   - .github/pr_labeler.yml
 styling:
   - '**/*.css'
+systemd:
+  - '**/*.service'
+  - '**/*.path'
+  - '**/*.socket'
+  - '**/*.timer'
