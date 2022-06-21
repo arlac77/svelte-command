@@ -1,6 +1,6 @@
 import { Selector } from "testcafe";
 
-const base = "http://localhost:5000";
+const base = "http://localhost:3000";
 
 fixture`command`.page`${base}/index.html`;
 
