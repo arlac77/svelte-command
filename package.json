@@ -57,7 +57,12 @@
   },
   "homepage": "https://github.com/arlac77/svelte-command#readme",
   "pkgbuild": {
-    "content": {}
+    "content": {
+      "${install.dir}": "build/",
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
+    },
+    "hooks": "pkg/hooks.sh",
+    "groups": "web"
   },
   "release": {
     "plugins": [
