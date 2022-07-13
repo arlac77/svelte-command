@@ -2,7 +2,7 @@ import { Selector } from "testcafe";
 
 const base = "http://localhost:5173/examples/svelte-command/";
 
-fixture`command`.page`${base}index.html`;
+fixture`command`.page`${base}`;
 
 test("command", async t => {
   const s = Selector("button").withText("Long Running Command");
