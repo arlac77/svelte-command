@@ -39,7 +39,7 @@
     "ava": "^4.3.1",
     "documentation": "^13.2.5",
     "mf-styling": "^1.2.33",
-    "npm-pkgbuild": "^10.12.2",
+    "npm-pkgbuild": "^10.12.3",
     "semantic-release": "^19.0.3",
     "svelte": "^3.49.0",
     "testcafe": "^1.20.0",
@@ -62,7 +62,7 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "groups": "examples",
-    "description" : "example showing ${name} features in action"
+    "description": "example showing ${name} features in action"
   },
   "release": {
     "plugins": [
