@@ -10,4 +10,4 @@ doc
 .github
 netlify.toml
 pkg
-vite.config.js
+vite.config.mts
