@@ -3,8 +3,6 @@ tests
 doc
 *.log
 *.tmp
-.tmp
-.test
 .node-version
 .vscode
 .github
