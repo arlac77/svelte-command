@@ -1,4 +1,7 @@
 export class BasicCommand {
+
+  subscriptions = new Set();
+  
   constructor(start, properties, options = {}) {
     if (options.timeout !== undefined) {
       properties.timeout = { value: options.timeout };
@@ -7,7 +10,6 @@ export class BasicCommand {
     Object.defineProperties(this, {
       _start: { value: start },
       _cancel: { value: options.cancel || (() => {}) },
-      subscriptions: { value: new Set() },
       ...properties
     });
 
