@@ -37,7 +37,7 @@ general command execution handling for svelte components
 
 ### Parameters
 
-*   `subscription` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** 
+*   `subscription` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)**&#x20;
 
 ## Command
 
@@ -45,18 +45,18 @@ general command execution handling for svelte components
 
 ### Parameters
 
-*   `_start`  
+*   `_start` &#x20;
 *   `options`   (optional, default `{}`)
 
 ### Properties
 
-*   `title` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-*   `description` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-*   `shortcuts` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
-*   `disabled` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
-*   `active` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
-*   `failed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
-*   `completed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+*   `title` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
+*   `description` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
+*   `shortcuts` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
+*   `disabled` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**&#x20;
+*   `active` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**&#x20;
+*   `failed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**&#x20;
+*   `completed` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)**&#x20;
 
 ## ConfirmCommand
 
@@ -66,7 +66,7 @@ Ask for confirmation before esxecution a given Command.
 
 ### Parameters
 
-*   `command`  
+*   `command` &#x20;
 
 ## FetchCommand
 
@@ -76,8 +76,8 @@ Command executing a fetch request.
 
 ### Parameters
 
-*   `url`  
-*   `fetchOptions`  
+*   `url` &#x20;
+*   `fetchOptions` &#x20;
 *   `options`   (optional, default `{}`)
 
 ## handleFailedResponse
@@ -86,9 +86,9 @@ Extract error description from response
 
 ### Parameters
 
-*   `response` **FetchResponse** 
+*   `response` **FetchResponse**&#x20;
 
-Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
 
 # install
 
