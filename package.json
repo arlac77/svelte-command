@@ -38,7 +38,7 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
     "ava": "^4.3.3",
     "documentation": "^14.0.0",
-    "mf-styling": "^1.7.3",
+    "mf-styling": "^1.7.4",
     "npm-pkgbuild": "^10.14.8",
     "semantic-release": "^19.0.5",
     "svelte": "^3.49.0",
@@ -46,7 +46,7 @@
     "vite": "^3.0.9"
   },
   "optionalDependencies": {
-    "mf-hosting": "^1.7.2"
+    "mf-hosting": "^1.7.3"
   },
   "repository": {
     "type": "git",
