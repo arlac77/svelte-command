@@ -8,7 +8,6 @@ jobs:
         os:
           - ubuntu-latest
         browser:
-          - chrome
           - firefox
         node-version:
           - 18.12.1
