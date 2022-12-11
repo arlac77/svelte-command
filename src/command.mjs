@@ -1,3 +1,7 @@
+
+/**
+ * 
+ */
 export class BasicCommand {
 
   subscriptions = new Set();
