@@ -20,21 +20,31 @@ general command execution handling for svelte components
 
 ### Table of Contents
 
-*   [subscribe](#subscribe)
+*   [BasicCommand](#basiccommand)
     *   [Parameters](#parameters)
+    *   [subscribe](#subscribe)
+        *   [Parameters](#parameters-1)
 *   [Command](#command)
-    *   [Parameters](#parameters-1)
+    *   [Parameters](#parameters-2)
     *   [Properties](#properties)
 *   [ConfirmCommand](#confirmcommand)
-    *   [Parameters](#parameters-2)
-*   [FetchCommand](#fetchcommand)
     *   [Parameters](#parameters-3)
-*   [handleFailedResponse](#handlefailedresponse)
+*   [FetchCommand](#fetchcommand)
     *   [Parameters](#parameters-4)
+*   [handleFailedResponse](#handlefailedresponse)
+    *   [Parameters](#parameters-5)
 
-## subscribe
+## BasicCommand
 
 ### Parameters
+
+*   `start` &#x20;
+*   `properties` &#x20;
+*   `options`   (optional, default `{}`)
+
+### subscribe
+
+#### Parameters
 
 *   `subscription` **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)**&#x20;
 
