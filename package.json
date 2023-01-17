@@ -39,14 +39,13 @@
     "ava": "^5.1.1",
     "documentation": "^14.0.1",
     "mf-styling": "^1.7.33",
-    "npm-pkgbuild": "^10.18.2",
+    "npm-pkgbuild": "^10.19.9",
     "semantic-release": "^20.0.2",
     "svelte": "^3.55.1",
-    "testcafe": "^15.1.317922",
+    "testcafe": "^2.2.0",
     "vite": "^4.0.4"
   },
   "optionalDependencies": {
-    "mf-hosting": "^1.8.2",
     "mf-hosting-frontend": "^1.0.4"
   },
   "repository": {
@@ -62,8 +61,9 @@
       "${install.dir}": "build/",
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
-    "groups": "examples",
-    "description": "example showing ${name} features in action"
+    "description": "example showing ${name} features in action",
+    "example": true,
+    "frontend": true
   },
   "release": {
     "plugins": [
