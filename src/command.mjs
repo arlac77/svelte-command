@@ -1,4 +1,7 @@
 
+
+const KEYBOARD_MODIFIERS = /(command|ctrl|meta|alt|shift)\+([a-zA-Z0-9])/i;
+
 /**
  * 
  */
@@ -173,7 +176,8 @@ export class Command extends BasicCommand {
     const s = this.shortcuts;
 
     if (s) {
-      let m = s.match(/(command|ctrl|meta|alt|shift)\+([a-zA-Z0-9])/i);
+      let m = s.match(KEYBOARD_MODIFIERS);
+
       if (m) {
         const c = modifier2char[m[1]];
         if (c) {
@@ -190,7 +194,7 @@ export class Command extends BasicCommand {
       const s = this.shortcuts;
 
       if (s) {
-        let m = s.match(/(command|ctrl|meta|alt|shift)\+([a-zA-Z0-9])/i);
+        let m = s.match(KEYBOARD_MODIFIERS);
         if (m) {
           if (event.key == m[2]) {
             return true;
