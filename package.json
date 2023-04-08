@@ -39,7 +39,7 @@
     "ava": "^5.2.0",
     "documentation": "^14.0.1",
     "mf-styling": "^1.7.52",
-    "npm-pkgbuild": "^11.7.7",
+    "npm-pkgbuild": "^11.7.8",
     "semantic-release": "^21.0.1",
     "svelte": "^3.58.0",
     "testcafe": "^2.5.0",
