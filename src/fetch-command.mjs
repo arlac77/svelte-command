@@ -43,9 +43,9 @@ export class FetchCommand extends Command {
 }
 
 /**
- * Extract error description from response
- * @param {FetchResponse} response
- * @return {string}
+ * Extract error description from response.
+ * @param {Response} response
+ * @return {Promise<string>}
  */
 export async function handleFailedResponse(response) {
   let message = response.statusText;
