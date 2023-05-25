@@ -92,13 +92,13 @@ Command executing a fetch request.
 
 ## handleFailedResponse
 
-Extract error description from response
+Extract error description from response.
 
 ### Parameters
 
-*   `response` **FetchResponse**&#x20;
+*   `response` **[Response](https://developer.mozilla.org/docs/Web/Guide/HTML/HTML5)**&#x20;
 
-Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)**&#x20;
+Returns **[Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>**&#x20;
 
 # install
 
