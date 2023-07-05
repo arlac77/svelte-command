@@ -4,7 +4,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "svelte": "./src/index.svelte",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.svelte"
+    }
+  },
   "description": "general command execution handling for svelte components",
   "keywords": [
     "commands",
