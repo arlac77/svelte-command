@@ -43,11 +43,11 @@
     "ava": "^5.3.1",
     "documentation": "^14.0.2",
     "mf-styling": "^3.0.0",
-    "npm-pkgbuild": "^11.8.14",
+    "npm-pkgbuild": "^11.9.0",
     "semantic-release": "^21.0.7",
     "svelte": "^4.0.5",
     "testcafe": "^3.0.1",
-    "vite": "^4.4.2"
+    "vite": "^4.4.4"
   },
   "optionalDependencies": {
     "mf-hosting-cloudflare": "^1.0.5",
@@ -122,7 +122,8 @@
       "arlac77/template-ava",
       "arlac77/template-cloudflare",
       "arlac77/template-pacman",
-      "arlac77/template-svelte-component"
+      "arlac77/template-svelte-component",
+      "arlac77/template-vite"
     ]
   }
 }
