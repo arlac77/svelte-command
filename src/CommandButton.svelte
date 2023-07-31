@@ -2,7 +2,7 @@
   export let command;
 
   function handleKeydown(event) {
-    if (command?.matchesKeydown && command.matchesKeydown(event)) {
+    if (command.matchesKeydown?.(event)) {
       command.start();
     }
   }
