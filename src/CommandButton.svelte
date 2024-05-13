@@ -23,6 +23,6 @@
   <slot />
 
   {#if $command.active}
-    <div class="spinner" />
+    <div class="spinner"></div>
   {/if}
 </button>
