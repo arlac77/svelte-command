@@ -4,6 +4,14 @@ import { Command } from "./command.mjs";
  * Command executing a fetch request.
  */
 export class FetchCommand extends Command {
+
+  /**
+   * 
+   * @param {*} url 
+   * @param {Object} fetchOptions
+   * @param {Object} options
+   * @param {Function} [options.responseHandler]
+   */
   constructor(url, fetchOptions, options = {}) {
     const controller = new AbortController();
     super(
