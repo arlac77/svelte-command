@@ -86,9 +86,9 @@ Command executing a fetch request.
 
 ### Parameters
 
-*   `url` &#x20;
-*   `fetchOptions` &#x20;
-*   `options`   (optional, default `{}`)
+*   `url` **any**&#x20;
+*   `fetchOptions` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)**&#x20;
+*   `options` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)**  (optional, default `{}`)
 
 ## handleFailedResponse
 
