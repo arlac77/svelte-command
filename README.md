@@ -72,7 +72,7 @@ general command execution handling for svelte components
 
 **Extends BasicCommand**
 
-Ask for confirmation before esxecution a given Command.
+Ask for confirmation before execution a given Command.
 
 ### Parameters
 
