@@ -1,14 +1,14 @@
 <script>
   export let command;
 
-  function handleKeydown(event) {
+  function onkeydown(event) {
     if (command.matchesKeydown?.(event)) {
       command.start();
     }
   }
 </script>
 
-<svelte:window on:keydown={handleKeydown} />
+<svelte:window {onkeydown} />
 
 <button
   disabled={$command.disabled}
