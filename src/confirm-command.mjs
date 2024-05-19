@@ -1,7 +1,7 @@
 import { BasicCommand } from "./command.mjs";
 
 /**
- * Ask for confirmation before esxecution a given Command.
+ * Ask for confirmation before execution a given Command.
  */
 export class ConfirmCommand extends BasicCommand {
   constructor(command) {
