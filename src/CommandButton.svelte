@@ -1,5 +1,5 @@
 <script>
-  export let command;
+  let { command } = $props();
 
   function onkeydown(event) {
     if (command.matchesKeydown?.(event)) {
@@ -15,7 +15,7 @@
   aria-keyshortcuts={$command.disabled ? undefined : $command.shortcuts}
   class:active={$command.active}
   class:failed={$command.failed}
-  on:click|preventDefault={() => command.start()}>
+  onclick={() => command.start()}>
   {#if $command.title !== undefined}
     {$command.title}
     {$command.shortcutDefinition}
