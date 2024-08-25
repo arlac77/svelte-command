@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
   export { Command } from "./command.mjs";
   export { ConfirmCommand } from "./confirm-command.mjs";
   export { FetchCommand } from "./fetch-command.mjs";
