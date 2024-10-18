@@ -10,3 +10,5 @@ netlify.toml
 pkg
 vite.config.mts
 dist
+.stylelintrc.json
+.stylelint.json
