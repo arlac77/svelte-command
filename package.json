@@ -5,15 +5,22 @@
     "access": "public",
     "provenance": true
   },
+  "types": "./types/module.d.mjs",
   "exports": {
     ".": {
-      "svelte": "./src/index.svelte"
-    }
+      "default": "./src/index.svelte",
+      "svelte": "./src/index.svelte",
+      "types": "./types/module.d.mjs"
+    },
+    "./css": "./src/common.css"
   },
   "description": "general command execution handling for svelte components",
   "keywords": [
     "commands",
     "component",
+    "filtering",
+    "paginator",
+    "sorting",
     "svelte",
     "vite",
     "web"
@@ -26,16 +33,25 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "prepare": "npm run prepare:vite",
+    "prepare": "npm run prepare:vite && npm run prepare:typescript",
     "prepare:vite": "vite build",
+    "prepare:typescript": "tsc --allowJs --declaration --emitDeclarationOnly --declarationDir types --resolveJsonModule --target es2024 --lib es2024 --lib dom -m esnext --module nodenext --moduleResolution nodenext --rootDir src ./src**/*.mjs",
     "start": "vite",
     "test": "npm run test:ava && npm run test:cafe",
     "test:cafe": "testcafe $BROWSER:headless tests/cafe/*-cafe.mjs --esm -s build/test --page-request-timeout 5000 --app-init-delay 8000 --app vite",
     "test:ava": "ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs",
+    "cover": "c8 -x 'tests/**/*' --temp-directory build/tmp ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs && c8 report -r lcov -o build/coverage --temp-directory build/tmp",
     "docs": "documentation readme --section=API ./src/**/*.mjs",
-    "lint": "npm run lint:docs",
+    "lint": "npm run lint:css && npm run lint:typescript && npm run lint:docs",
     "lint:docs": "documentation lint ./src/**/*.mjs",
+    "lint:css": "stylelint ./src/*.css",
+    "lint:typescript": "tsc --allowJs --checkJs --noEmit --resolveJsonModule --target es2024 --lib es2024 --lib dom -m esnext --module nodenext --moduleResolution nodenext ./src**/*.mjs",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "pacc": "^3.1.8",
+    "svelte-command": "^3.0.7",
+    "svelte-entitlement": "^2.0.6"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.0",
@@ -44,12 +60,16 @@
     "@semantic-release/release-notes-generator": "^14.0.1",
     "@sveltejs/vite-plugin-svelte": "^4.0.0-next.8",
     "ava": "^6.1.3",
+    "c8": "^10.1.2",
     "documentation": "^14.0.3",
     "mf-styling": "^3.2.4",
     "npm-pkgbuild": "^15.6.2",
     "semantic-release": "^24.1.2",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
     "svelte": "^5.0.0-next.269",
     "testcafe": "^3.6.2",
+    "typescript": "^5.7.0-beta",
     "vite": "^5.4.9",
     "vite-plugin-compression2": "^1.3.0"
   },
@@ -125,12 +145,15 @@
   },
   "template": {
     "inheritFrom": [
+      "arlac77/svelte-common",
       "arlac77/template-arlac77-github",
       "arlac77/template-ava",
       "arlac77/template-cloudflare",
+      "arlac77/template-npm",
       "arlac77/template-npm-pkgbuild",
       "arlac77/template-svelte-component",
-      "arlac77/template-vite"
+      "arlac77/template-vite",
+      "arlac77/template-web-component"
     ]
   }
 }
