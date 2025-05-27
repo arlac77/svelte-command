@@ -48,7 +48,7 @@
     "mf-styling": "^3.2.13",
     "npm-pkgbuild": "^18.2.8",
     "semantic-release": "^24.2.5",
-    "svelte": "^5.33.3",
+    "svelte": "^5.33.4",
     "testcafe": "^3.7.2",
     "vite": "^6.3.5",
     "vite-plugin-compression2": "^1.4.0"
