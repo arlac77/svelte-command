@@ -1,25 +1,22 @@
-import { Selector } from "testcafe";
+// @ts-check
+import { test, expect } from "@playwright/test";
 
-const base = "http://localhost:5173/";
+test("command", async ({ page }) => {
+  await page.goto("http://localhost:5173/");
 
-fixture`command`.page`${base}`;
+  await page.getByRole("button", { name: "Long Running Command" }).click();
 
-test("command", async t => {
-  const s = Selector("button").withText("Long Running Command");
+  await expect(page.locator("#commandExecuted")).toContainText("1");
 
-  await t.click(s);
-  await t.expect(Selector("#commandExecuted").innerText).eql("1");
-
-  await t.takeScreenshot({
-    path: "command_long_running.png"
+  await page.screenshot({
+    path: "test-results/screenshots/command_long_running.png"
   });
 });
 
-test("failing command", async t => {
-  const s = Selector("button").withText("Failing Command");
+test("failing command", async ({ page }) => {
+  await page.getByRole("button", { name: "Failing Command" }).click();
 
-  await t.click(s);
-  await t.takeScreenshot({
-    path: "command_failing.png"
+  await page.screenshot({
+    path: "test-results/screenshots/command_failing.png"
   });
 });
