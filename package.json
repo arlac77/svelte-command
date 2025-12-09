@@ -30,14 +30,16 @@
     "prepare": "node --run prepare:vite",
     "prepare:vite": "vite build",
     "start": "vite",
-    "test": "node --run test:ava",
+    "test": "node --run test:ava && node --run test:playwright",
     "test:ava": "ava --timeout 4m tests/*-ava.mjs tests/*-ava-node.mjs",
+    "test:playwright": "npx playwright test",
     "docs": "documentation readme --section=API ./src**/*.mjs",
     "lint": "node --run lint:docs",
     "lint:docs": "documentation lint ./src**/*.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/github": "^12.0.2",
@@ -47,9 +49,10 @@
     "documentation": "^14.0.3",
     "mf-styling": "^3.2.20",
     "npm-pkgbuild": "^19.0.8",
+    "playwright": "^1.57.0",
     "semantic-release": "^25.0.2",
-    "svelte": "^5.45.6",
-    "vite": "^7.2.6",
+    "svelte": "^5.45.8",
+    "vite": "^7.2.7",
     "vite-plugin-compression2": "^2.4.0"
   },
   "peerDependencies": {
@@ -128,6 +131,7 @@
       "arlac77/template-ava",
       "arlac77/template-cloudflare",
       "arlac77/template-npm-pkgbuild",
+      "arlac77/template-playwright",
       "arlac77/template-svelte-component",
       "arlac77/template-vite"
     ]
