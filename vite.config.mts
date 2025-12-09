@@ -31,7 +31,7 @@ export default defineConfig(async ({ command, mode }) => {
         }
       }),
       compression({
-        algorithm: "brotliCompress",
+        algorithm: ["brotliCompress"],
         exclude: [
           /\.(map)$/,
           /\.(br)$/,
