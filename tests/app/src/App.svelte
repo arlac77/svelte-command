@@ -44,7 +44,7 @@
 
   const failingCommand = new Command(
     () =>
-      new Promise((resolve, reject) => setTimeout(() => reject("failed"), 5000))
+      new Promise((resolve, reject) => setTimeout(() => reject("failed"), 3000))
   );
 </script>
 

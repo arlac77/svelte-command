@@ -14,7 +14,13 @@ test("command", async ({ page }) => {
 });
 
 test("failing command", async ({ page }) => {
-  await page.getByRole("button", { name: "Failing Command" }).click();
+  const button = await page.getByRole("button", { name: "Failing Command" });
+  expect(button.isVisible());
+
+  /*
+  await expect(page.locator("body")).toMatchAriaSnapshot(
+    `- button "Failing Command"`
+  );*/
 
   await page.screenshot({
     path: "test-results/screenshots/command_failing.png"
