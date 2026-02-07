@@ -72,7 +72,7 @@
   "homepage": "https://github.com/arlac77/svelte-command#readme",
   "pkgbuild": {
     "content": {
-      "${install.dir}": "build/"
+      "${install_dir}": "build/"
     },
     "example": true,
     "frontend": true
